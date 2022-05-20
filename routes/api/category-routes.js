@@ -70,6 +70,7 @@ router.delete("/:id", async (req, res) => {
     const categoriesData = await Category.destroy({
       where: { id: req.params.id },
     });
+    console.log("Logged Output: ~ categoriesData", categoriesData);
 
     if (!categoriesData) {
       res.status(404).json({ message: " Not category found with this id" });
