@@ -51,7 +51,7 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   // update a tag's name by its `id` value
   try {
-    const tagUpdateData = await Tag.update(req.body.tag_name, {
+    const tagUpdateData = await Tag.update(req.body, {
       where: {
         id: req.params.id,
       },
@@ -81,7 +81,9 @@ router.delete("/:id", async (req, res) => {
       return;
     }
 
-    res.status(200).json(tagData);
+    res
+      .status(200)
+      .json(`Succefully deleted product with id: ${req.params.id}`);
   } catch (err) {
     res.status(500).json(err);
   }
