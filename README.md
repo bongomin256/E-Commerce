@@ -64,7 +64,7 @@ Incase of any question[s] or suggestion[s] concerning this appication, please co
 ## Links
 
 - [Github app repo](https://github.com/bongomin256/E-Commerce)
-- [Link to video]()
+- [Link to video](https://www.youtube.com/watch?v=MIKgwJ-AO5E)
 
 ## Screenshots
 
